@@ -1,3 +1,6 @@
 [submodule "sde_sampler"]
 	path = sde_sampler
 	url = https://github.com/juliusberner/sde_sampler.git
+[submodule "monte-carlo-diffusion"]
+	path = monte-carlo-diffusion
+	url = https://github.com/adam-coogan/monte-carlo-diffusion
