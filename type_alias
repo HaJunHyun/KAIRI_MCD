@@ -1,0 +1,10 @@
+from typing import Callable, Tuple, Optional, Union, Any
+import jax
+from jax import Array
+from flax import nnx
+
+KeyArray = Union[Array, jax._src.prng.PRNGKeyArray]
+Params = Union[nnx.State, Array]
+Batch = Union[Array, Tuple[Array, Array]]
+PyTree = Any
+LossFunction = Callable[[Union[nnx.Module, Params], Optional[Batch]], Tuple[float, ...]]
